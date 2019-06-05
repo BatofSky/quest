@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<title></title>
+</head>
+<body>
+<div class="start"><!--Первый-->
+	<div class="col-12 border shadow-lg p-3 mb-5 rounded bg-dark">
+		<h2 class="text-uppercase text-center text-white">Игра</h2>
+	</div>
+	<div class="d-flex col-12 px-0">
+		<div class="col-2 border shadow-lg p-3 mb-3 bg-dark rounded bg-dark container IGRA1" style="margin-top: 30px; height: 440px">
+			<div class="col-12">
+				<img src="door.png" clas style="width: 190px; height: 380px">
+			</div>
+			<h5 class="text-white text-center">Harry Potter</h5>
+		</div>
+		<div class="col-2 border shadow-lg p-3 mb-3 bg-dark rounded bg-dark container otvet2" style="margin-top: 30px; height: 440px">
+			<div class="col-12 ">
+				<img src="door2.png" class="w-100">
+			</div>
+			<h5 class="text-white text-center">CS:GO</h5>
+		</div>
+		<div class="col-2 border shadow-lg p-3 mb-5 bg-dark rounded bg-dark container otvet3" style="margin-top: 30px; height: 440px">
+			<div class="col-12 ">
+				<img src="door2.png" class="w-100">
+			</div>
+			<h5 class="text-white text-center">PUBG</h5>
+		</div>
+	</div>
+</div>
+<div class="Harry" style="display: none; "><!--Гарри-->
+	<div style="background-image: url(bg.jpg); background-size:1530px 750px; height: 750px; width: 1530px">
+		<div class="col-12 bg-dark d-flex" style="height: 50px">
+			<h5 class="btn btn-secondary my-auto exit1" style="margin-left: 150px; height: 40px; width: 100px">EXIT</h5s>
+			<h2 class="text-uppercase text-center text-white">Harry needs to find Wonder stick, pijama and the ring</h2>
+			<h2 class="text-uppercase text-center text-white scoree" style="margin-left: 150px">0</h2>
+
+		</div>
+		<div class="col-2 METLA">
+			<img src="metla.png" class="w-25" style="position: absolute; margin-left: 500px; margin-top: 320px">
+		</div>
+		<div class="col-1 PALKA">
+			<img src="2.png" class="w-50" style="position: absolute; margin-top: 500px; margin-left: 300px">
+		</div>
+		<div class="col-1 KOLCO">
+			<img src="1.png" class="w-25" style="position: absolute; margin-top: 510px; margin-left: 890px">
+		</div>
+		<div class="col-1 AK">
+			<img src="gun.png" class="w-75" style="position: absolute; margin-top: 500px; margin-left: 600px">
+		</div>
+		<div class="col-1 PIJAMA">
+			<img src="3.png" class="w-100" style="position: absolute; margin-left: 1400px">
+		</div>
+</div>
+<script>
+	let score = 0
+	document.querySelector(".otvet2").onclick = function(){
+		document.querySelector(".start").style.display ="none"
+		document.querySelector(".CS").style.display ="block"
+	}
+	document.querySelector(".IGRA1").onclick = function(){
+		document.querySelector(".start").style.display ="none"
+		document.querySelector(".Harry").style.display ="block"
+	}
+	document.querySelector(".METLA").onclick = function(){
+		alert("Красавчик!")
+		document.querySelector(".METLA").style.display ="none"
+		score = score - 1;
+		document.querySelector(".scoree").innerHTML = score;
+	}
+	document.querySelector(".AK").onclick = function(){
+		alert("Красавчик!")
+		document.querySelector(".AK").style.display ="none"
+		score = score - 1;
+		document.querySelector(".scoree").innerHTML = score;
+	}
+	document.querySelector(".KOLCO").onclick = function(){
+		alert("Красавчик!")
+		document.querySelector(".KOLCO").style.display ="none"
+		score = score + 1;
+		document.querySelector(".scoree").innerHTML = score;
+	}
+	document.querySelector(".PIJAMA").onclick = function(){
+		alert("Красавчик!")
+		document.querySelector(".PIJAMA").style.display ="none"
+		score = score + 1;
+		document.querySelector(".scoree").innerHTML = score;
+	}
+	document.querySelector(".PALKA").onclick = function(){
+		alert("Красавчик!")
+		document.querySelector(".PALKA").style.display ="none"
+		score = score + 1;
+		document.querySelector(".scoree").innerHTML = score;
+	}
+	document.querySelector(".exit1").onclick = function(){
+		document.querySelector(".Harry").style.display ="none"
+		document.querySelector(".start").style.display ="block"
+	}
+
+
+</script>
+</body>
+</html>
